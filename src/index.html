@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/progressbar.css">
+  <link rel="stylesheet" href="css/checkbox.css">
+  <title>DIU takeoff registration</title>
+</head>
+<body>
+
+  <!--Nav bar-->
+  <nav class="navbar navbar-inverse fixed-top">
+    <div class="containiner">
+     <div class="row">
+       <div class="col">
+           <a href="#" class="navbar-brand">DIU Take-off <span class="d-none d-md-inline">programming contest</span> registration</a>
+       </div>
+     </div>
+    </div>
+  </nav>
+<!--Form section -->
+<section id="form-section">
+  <div class="dark-overlay">
+    <div class="form-inner">
+      <div class="container-fluid">
+  <!----------- Progress bar---------------->
+        <div class="linear-progress-material fixed-top progress-bar">
+          <div class="bar bar1"></div>
+          <div class="bar bar2"></div>
+      </div>
+<!------------------------------------------->
+        <div class="row justify-content-center align-items-center">
+          <div class="card card-form col-md-5">
+            <div class="card-block">
+              <form>
+                <div class="form-group">
+                     <div class="tooltip1">
+                      <input type="text" name="username" class="form-control form-control-lg name-input" required>
+                      <span class="bar name-bar"></span>
+                       <div class="input-placeholder name-placeholder">
+                        Name<span class="name-star">*</span>
+                       </div>
+                       <div class="tolltip-inline1" style="color:black">
+                         <ul class="list-group">
+                           <li id="name-list1">
+                             Name size atleast 3.
+                             <span class="fa" aria-hiden="true"></span>
+                           </li>
+                           <li id="name-list2">
+                              Name size atmost 30.
+                              <span class="fa" aria-hiden="true"></span>
+                           </li>
+                           <li id="name-list3">
+                             Name is valid or not.
+                             <span class="fa" aria-hiden="true"></span>
+                           </li>
+                         </ul>
+                       </div>
+                     </div>
+                </div>
+                <div class="form-group">
+                  <div class="tooltip1">
+                     <input type="text" name="student-id" class="form-control form-control-lg id-input" required>
+                     <span class="bar id-bar"></span>
+                     <div class="input-placeholder id-placeholder">
+                      Student ID<span class="id-star">*</span>
+                    </div>
+                    <div class="error-message id-error">
+                      <p>
+                        A response is allready recorded with this Student ID.
+                      </p>
+                    </div>
+                     <div class="tolltip-inline1" style="color:black">
+                       <ul class="list-group">
+                         <li id="id-list1">
+                           Student ID is valid or not-
+                           <span class="fa" aria-hiden="true"></span>
+                         </li>
+                       </ul>
+                     </div>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <div class="tooltip1">
+                     <input type="text" name="email" class="form-control form-control-lg email-input" required>
+                     <span class="bar email-bar"></span>
+                     <div class="input-placeholder email-placeholder">
+                      Email<span class="email-star">*</span>
+                     </div>
+                     <div class="error-message email-error">
+                       <p>
+                         A response is allready recorded with this Email.
+                       </p>
+                     </div>
+                     <div class="tolltip-inline1" style="color:black">
+                       <ul class="list-group">
+                         <li id="email-list1">
+                           DIU email
+                           <span class="fa" aria-hiden="true"></span>
+                         </li>
+                         <li id="email-list2">
+                             Email is valid or not
+                             <span class="fa" aria-hiden="true"></span>
+                         </li>
+                       </ul>
+                     </div>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <div class="tooltip1">
+                  <input type="text" name="contact" class="form-control form-control-lg contact-input" required>
+                  <span class="bar contact-bar"></span>
+                  <div class="input-placeholder contact-placeholder">
+                   Contact NO<span class="contact-star">*</span>
+                  </div>
+                  <div class="error-message contact-error">
+                    <p>
+                      A response is allready recorded with this Contact NO.
+                    </p>
+                  </div>
+                  <div class="tolltip-inline1" style="color:black">
+                    <ul class="list-group">
+                      <li id="contact-list1">
+                        Contact NO is valid or not
+                        <span class="fa" aria-hiden="true"></span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                </div>
+                <div class="form-group">
+                   <input class="department-dropdown form-control form-control-lg" type="text" readonly>
+                   <span class="bar department-bar"></span>
+                   <span class="fa fa-caret-down dropdown-icon"></span>
+                   <div class="input-placeholder department-placeholder">
+                    Department<span class="contact-star">*</span>
+                  </div>
+                   <div class="dropdown-menu1 department-dorpdown-menu">
+                     <option class="dropdown-item1" href="#">CSE</option>
+                     <option class="dropdown-item1" href="#">SWE</option>
+                   </div>
+                </div>
+                <div class="form-group">
+                   <input class="semister-dropdown dropdown1 form-control form-control-lg" type="text" readonly>
+                   <span class="bar semister-bar"></span>
+                   <span class="fa fa-caret-down dropdown-icon"></span>
+                   <div class="input-placeholder semister-placeholder">
+                    Semister<span class="contact-star">*</span>
+                  </div>
+                   <div class="dropdown-menu1 semister-dorpdown-menu">
+                     <option class="dropdown-item1 d">1st</option>
+                     <option class="dropdown-item1">2nd</option>
+                   </div>
+                </div>
+                <div class="form-group">
+                   <input class="tsirt-dropdown form-control form-control-lg" type="text" readonly>
+                   <span class="bar tsirt-bar"></span>
+                   <span class="fa fa-caret-down dropdown-icon"></span>
+                   <div class="input-placeholder tsirt-placeholder placeholder">
+                    T-sirt size<span class="contact-star">*</span>
+                  </div>
+                   <div class="dropdown-menu1 tsirt-dorpdown-menu">
+                     <option class="dropdown-item1 c">S</option>
+                     <option class="dropdown-item1">M</option>
+                     <option class="dropdown-item1">L</option>
+                     <option class="dropdown-item1">XL</option>
+                   </div>
+                </div>
+                <div class="form-group">
+                <p>
+                 <input type="checkbox" id="check-box" />
+                 <label for="check-box"></label>
+                 <div class="terms-condition1">
+                   I accept with the <span class="terms-and-condition">terms & conditions</span>.
+                 </div>
+                </p>
+                </div>
+                <div class="form-group">
+                  <input  class="submit" type="button" value="Submit" disabled/>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer-->
+<footer class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col text-center">
+        <div class="footer-content">
+          <p>
+            Developed by Kira<sup style="margin-left:4px">&reg</sup>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+<!--Error Modal-->
+<div class="modal fade" id="errorModal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title mr-2" id="errorModal">
+          <span class="fa fa-exclamation-triangle"></span>Error!!!
+        </h5>
+        <button class="close" data-dismiss="modal"><span>&times;</span></button>
+      </div>
+      <div class="modal-body">
+        <h6>
+          Please check your internet connection.
+        </h6>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-------------Success Modal-------------->
+<div class="modal fade" id="successModal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="contactModal">
+          <span class="fa fa-thumbs-up mr-2"></span>Success!!!
+        </h5>
+      </div>
+      <div class="modal-body">
+        <h6>
+          Your response is recorded successfully.
+        </h6>
+      </div>
+      <div class="modal-footer">
+        <h7 class="spreadsheet-link"><a href="https://docs.google.com/spreadsheets/d/1KufK7QPVs-xn5nxCpk2jBnQ8FnoKoywyZtxNhQkYq3s/edit#gid=1084062057" target="_blank">Check your response</a></h7>
+       <button class="btn btn-primary justify-content-right" data-dismiss="modal">ok</button>
+     </div>
+    </div>
+  </div>
+</div>
+<!-------- Terms and conditions modal----------->
+<div class="modal fade" id="termsModal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="termstModal">
+          <span class="fa fa-cogs mr-2"></span>Terms & conditions
+        </h5>
+      </div>
+      <div class="modal-body">
+        <h6>
+          <p>
+            moment, he has a chance of glimpsing the world’s best computer programmer in Google’s Moscow office across the river.
+          </p>
+          <p>
+            He is Petr Mitrichev, a 27-year-old Russian who works on Google’s search engine and earned his champion’s title in competitive programming, a sport where hackers write computer code in pursuit of cash prizes, travel opportunities, and a deep fulfillment unattainable anywhere else.
+          </p>
+          <p>
+            “You have a feeling of satisfaction in a contest when you solve a problem,” says Mitrichev, affable and a little pale in a Google T-shirt during an interview on the lawn of the company’s headquarters in Mountain View, California.
+          </p>
+          <p>
+            Since 2005, Mitrichev, a graduate of Moscow State University, has led the globe in algorithmic programming. That’s the Grand Prix of competitive coding categories, in which riddles involving infinite game boards or the decibel level of n + 1 mooing cows require instant mathematical insights and quick fingers on the keyboard. Mitrichev is known for his “short pause”—that is, he starts to answer questions nearly as soon as he sees them.
+          </p>
+        </h6>
+      </div>
+      <div class="modal-footer">
+       <button class="btn btn-primary justify-content-right" data-dismiss="modal">ok</button>
+     </div>
+    </div>
+  </div>
+</div>
+
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/tether.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/sheetrock.js"></script>
+  <script src="js/live_validation.js"></script>
+  <script src="js/response.js"></script>
+</body>
+</html>
